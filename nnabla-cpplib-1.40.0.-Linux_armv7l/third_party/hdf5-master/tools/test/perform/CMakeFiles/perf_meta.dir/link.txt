@@ -1,0 +1,1 @@
+/usr/bin/cc   -std=c99  -fstdarg-opt -fmessage-length=0 -O3 -DNDEBUG   CMakeFiles/perf_meta.dir/perf_meta.c.o  -o ../../../bin/perf_meta  -Wl,-rpath,"\$ORIGIN/../lib:\$ORIGIN/" ../../../bin/libhdf5_tools.so.200.1.1 ../../../bin/libhdf5_test.so.200.2.0 ../../../bin/libhdf5.so.200.2.0 -lm -ldl 

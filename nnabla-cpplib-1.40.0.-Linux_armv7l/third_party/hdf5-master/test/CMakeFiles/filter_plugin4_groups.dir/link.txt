@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC   -std=c99  -fstdarg-opt -fmessage-length=0 -O3 -DNDEBUG  -shared -Wl,-soname,libfilter_plugin4_groups.so.200 -o ../bin/libfilter_plugin4_groups.so.200.2.0 CMakeFiles/filter_plugin4_groups.dir/filter_plugin4_groups.c.o  -Wl,-rpath,"\$ORIGIN/../lib:\$ORIGIN/" ../bin/libhdf5_test.so.200.2.0 -lm ../bin/libhdf5.so.200.2.0 -ldl 

@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/H5WATCH_files"
+  "testfiles/w-err-cmpd1.err"
+  "testfiles/w-err-cmpd2.err"
+  "testfiles/w-err-cmpd3.err"
+  "testfiles/w-err-cmpd4.err"
+  "testfiles/w-err-cmpd5.err"
+  "testfiles/w-err-dset-nomax.err"
+  "testfiles/w-err-dset-none.err"
+  "testfiles/w-err-dset1.err"
+  "testfiles/w-err-dset2.err"
+  "testfiles/w-err-file.err"
+  "testfiles/w-err-poll.ddl"
+  "testfiles/w-err-poll0.ddl"
+  "testfiles/w-err-width.ddl"
+  "testfiles/w-ext-cmpd-esc-f1.ddl"
+  "testfiles/w-ext-cmpd-esc-f3.ddl"
+  "testfiles/w-ext-cmpd-esc-ff2.ddl"
+  "testfiles/w-ext-cmpd-esc.ddl"
+  "testfiles/w-ext-cmpd-f1.ddl"
+  "testfiles/w-ext-cmpd-f2.ddl"
+  "testfiles/w-ext-cmpd-ff3.ddl"
+  "testfiles/w-ext-cmpd-label.ddl"
+  "testfiles/w-ext-cmpd-two-f1.ddl"
+  "testfiles/w-ext-cmpd-two-f3.ddl"
+  "testfiles/w-ext-cmpd-two-ff2.ddl"
+  "testfiles/w-ext-cmpd-two.ddl"
+  "testfiles/w-ext-cmpd.ddl"
+  "testfiles/w-ext-early.ddl"
+  "testfiles/w-ext-late.ddl"
+  "testfiles/w-ext-one-d.ddl"
+  "testfiles/w-ext-one-simple.ddl"
+  "testfiles/w-ext-one.ddl"
+  "testfiles/w-ext-two-d.ddl"
+  "testfiles/w-ext-two-width.ddl"
+  "testfiles/w-ext-two.ddl"
+  "testfiles/w-help1.ddl"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/H5WATCH_files.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

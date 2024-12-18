@@ -1,0 +1,1 @@
+/usr/bin/cc   -std=c99  -fstdarg-opt -fmessage-length=0 -O3 -DNDEBUG   CMakeFiles/tellub.dir/tellub.c.o  -o ../../../bin/tellub  -Wl,-rpath,"\$ORIGIN/../lib:\$ORIGIN/" ../../../bin/libhdf5_tools.so.200.1.1 ../../../bin/libhdf5.so.200.2.0 -ldl 

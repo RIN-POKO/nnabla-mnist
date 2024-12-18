@@ -1,0 +1,1 @@
+/usr/bin/cc   -std=c99  -fstdarg-opt -fmessage-length=0 -O3 -DNDEBUG   CMakeFiles/tcheck_version.dir/tcheck_version.c.o  -o ../bin/tcheck_version  -Wl,-rpath,"\$ORIGIN/../lib:\$ORIGIN/" ../bin/libhdf5_test.so.200.2.0 -lm ../bin/libhdf5.so.200.2.0 -ldl 

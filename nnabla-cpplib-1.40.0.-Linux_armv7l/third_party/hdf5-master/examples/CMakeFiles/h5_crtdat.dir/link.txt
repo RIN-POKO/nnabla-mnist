@@ -1,0 +1,1 @@
+/usr/bin/cc   -std=c99  -fstdarg-opt -fmessage-length=0 -O3 -DNDEBUG   CMakeFiles/h5_crtdat.dir/h5_crtdat.c.o  -o ../bin/h5_crtdat  -Wl,-rpath,"\$ORIGIN/../lib:\$ORIGIN/" ../bin/libhdf5.so.200.2.0 -ldl 

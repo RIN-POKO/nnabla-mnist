@@ -2,7 +2,7 @@
 ARCH := $(shell uname -m)
 
 ifeq ($(ARCH), aarch64)
-    # for aarch64 (e.g. Jetson Nano, Raspberry Pi 4)
+    # for aarch64 (e.g. Jetson Nano, Raspberry Pi 4 64-bit OS)
 
     # Compiler and Flags
     CXX = g++
@@ -19,6 +19,25 @@ ifeq ($(ARCH), aarch64)
 
     # Export library path for runtime
     export LD_LIBRARY_PATH := ./nnabla-cpplib-1.38.0-Linux_aarch64/lib:$(LD_LIBRARY_PATH)
+
+else ifeq ($(ARCH), armv7l)
+    # for armv7l (e.g. Raspberry Pi 32-bit OS)
+
+    # Compiler and Flags
+    CXX = g++
+    CXXFLAGS = -I./nnabla-cpplib-1.40.0.-Linux_armv7l/include -std=c++14
+
+    # Library Paths
+    LDFLAGS = -L./nnabla-cpplib-1.40.0.-Linux_armv7l/lib -Wl,-rpath=./nnabla-cpplib-1.40.0.-Linux_armv7l/lib
+
+    # HDF5 Library Paths
+    HDF5_LDFLAGS = -L./usr/lib/arm-linux-gnueabihf
+
+    # Libraries to Link
+    LDLIBS = -lnnabla -lnnabla_utils -lnnabla_cli $(HDF5_LDFLAGS)
+
+    # Export library path for runtime
+    export LD_LIBRARY_PATH := ./nnabla-cpplib-1.40.0.-Linux_armv7l/lib:$(LD_LIBRARY_PATH)
 
 else ifeq ($(ARCH), x86_64)
     # for x86_64 (e.g. PC)
@@ -51,3 +70,5 @@ mnist_runtime: mnist_runtime.o
 
 clean:
 	rm -f mnist_runtime.o mnist_runtime
+
+

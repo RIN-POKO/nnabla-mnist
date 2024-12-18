@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/Desktop/nnabla/third_party/hdf5-master/test/atomic_writer.c
+assert.h
+-
+errno.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+fcntl.h
+-
+unistd.h
+-
+sys/types.h
+-
+sys/stat.h
+-
+sys/wait.h
+-
+

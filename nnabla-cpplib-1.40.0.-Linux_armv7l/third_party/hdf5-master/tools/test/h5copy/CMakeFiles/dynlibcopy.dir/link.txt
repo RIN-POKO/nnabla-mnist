@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC   -std=c99  -fstdarg-opt -fmessage-length=0 -O3 -DNDEBUG  -shared -Wl,-soname,libdynlibcopy.so.200 -o ../../../bin/libdynlibcopy.so.200.2.0 CMakeFiles/dynlibcopy.dir/dynlib_copy.c.o  -Wl,-rpath,"\$ORIGIN/../lib:\$ORIGIN/" ../../../bin/libhdf5.so.200.2.0 -ldl 

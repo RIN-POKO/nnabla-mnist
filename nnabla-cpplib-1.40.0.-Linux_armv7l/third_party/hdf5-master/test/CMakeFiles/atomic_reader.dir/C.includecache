@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/Desktop/nnabla/third_party/hdf5-master/test/atomic_reader.c
+assert.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+fcntl.h
+-
+unistd.h
+-
+sys/types.h
+-
+sys/stat.h
+-
+

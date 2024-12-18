@@ -1,0 +1,1 @@
+/usr/bin/cc   -std=c99  -fstdarg-opt -fmessage-length=0 -O3 -DNDEBUG   CMakeFiles/h5_vds-percival.dir/h5_vds-percival.c.o  -o ../bin/h5_vds-percival  -Wl,-rpath,"\$ORIGIN/../lib:\$ORIGIN/" ../bin/libhdf5.so.200.2.0 -ldl 

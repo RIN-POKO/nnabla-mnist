@@ -1,0 +1,1 @@
+/usr/bin/cc   -std=c99  -fstdarg-opt -fmessage-length=0 -O3 -DNDEBUG   CMakeFiles/h5diff-shared.dir/h5diff_common.c.o CMakeFiles/h5diff-shared.dir/h5diff_main.c.o  -o ../../../bin/h5diff-shared  -Wl,-rpath,"\$ORIGIN/../lib:\$ORIGIN/" ../../../bin/libhdf5_tools.so.200.1.1 ../../../bin/libhdf5.so.200.2.0 -ldl 

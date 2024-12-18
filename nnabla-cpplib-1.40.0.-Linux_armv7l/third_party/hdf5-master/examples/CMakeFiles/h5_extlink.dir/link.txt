@@ -1,0 +1,1 @@
+/usr/bin/cc   -std=c99  -fstdarg-opt -fmessage-length=0 -O3 -DNDEBUG   CMakeFiles/h5_extlink.dir/h5_extlink.c.o  -o ../bin/h5_extlink  -Wl,-rpath,"\$ORIGIN/../lib:\$ORIGIN/" ../bin/libhdf5.so.200.2.0 -ldl 

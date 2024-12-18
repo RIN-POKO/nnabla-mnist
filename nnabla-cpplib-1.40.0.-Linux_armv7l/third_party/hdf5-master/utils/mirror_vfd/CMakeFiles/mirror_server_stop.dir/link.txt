@@ -1,0 +1,1 @@
+/usr/bin/cc   -std=c99  -fstdarg-opt -fmessage-length=0 -O3 -DNDEBUG   CMakeFiles/mirror_server_stop.dir/mirror_server_stop.c.o  -o ../../bin/mirror_server_stop  -Wl,-rpath,"\$ORIGIN/../lib:\$ORIGIN/" ../../bin/libhdf5.so.200.2.0 -ldl 
